@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MineViewController: UIViewController {
+class MineViewController: AIIBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

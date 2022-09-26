@@ -18,6 +18,8 @@
 		E4D152EC28E1F05C000E3E31 /* FoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D152EB28E1F05C000E3E31 /* FoundViewController.swift */; };
 		E4D152EE28E1F066000E3E31 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D152ED28E1F066000E3E31 /* CartViewController.swift */; };
 		E4D152F028E1F06F000E3E31 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D152EF28E1F06F000E3E31 /* MineViewController.swift */; };
+		E4D152F328E1FF80000E3E31 /* AIIBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D152F228E1FF80000E3E31 /* AIIBaseViewController.swift */; };
+		E4D152F528E1FFFE000E3E31 /* AIICustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D152F428E1FFFE000E3E31 /* AIICustomNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		E4D152EB28E1F05C000E3E31 /* FoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundViewController.swift; sourceTree = "<group>"; };
 		E4D152ED28E1F066000E3E31 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		E4D152EF28E1F06F000E3E31 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		E4D152F228E1FF80000E3E31 /* AIIBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIIBaseViewController.swift; sourceTree = "<group>"; };
+		E4D152F428E1FFFE000E3E31 /* AIICustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIICustomNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		E48101CF28E1EC96002EBFE2 /* AII_Proj_JD */ = {
 			isa = PBXGroup;
 			children = (
+				E4D152F128E1FF6A000E3E31 /* BaseViewControllers */,
 				E4D152E628E1F00B000E3E31 /* ViewControllers */,
 				E4D152E328E1EFA1000E3E31 /* TabBarController */,
 				E48101D028E1EC96002EBFE2 /* AppDelegate.swift */,
@@ -96,6 +101,15 @@
 				E4D152EF28E1F06F000E3E31 /* MineViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E4D152F128E1FF6A000E3E31 /* BaseViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E4D152F228E1FF80000E3E31 /* AIIBaseViewController.swift */,
+				E4D152F428E1FFFE000E3E31 /* AIICustomNavigationController.swift */,
+			);
+			path = BaseViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,12 +183,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D152E828E1F039000E3E31 /* HomeViewController.swift in Sources */,
+				E4D152F528E1FFFE000E3E31 /* AIICustomNavigationController.swift in Sources */,
 				E48101D528E1EC96002EBFE2 /* ViewController.swift in Sources */,
 				E4D152F028E1F06F000E3E31 /* MineViewController.swift in Sources */,
 				E4D152E528E1EFE3000E3E31 /* AIIMainTabBarControllerViewController.swift in Sources */,
 				E48101D128E1EC96002EBFE2 /* AppDelegate.swift in Sources */,
 				E4D152EE28E1F066000E3E31 /* CartViewController.swift in Sources */,
 				E4D152EA28E1F050000E3E31 /* CategoryViewController.swift in Sources */,
+				E4D152F328E1FF80000E3E31 /* AIIBaseViewController.swift in Sources */,
 				E4D152EC28E1F05C000E3E31 /* FoundViewController.swift in Sources */,
 				E48101D328E1EC96002EBFE2 /* SceneDelegate.swift in Sources */,
 			);

@@ -24,21 +24,21 @@ class AIIMainTabBarControllerViewController: UITabBarController {
     
     func initTabBar() {
         // 如下的vc都是一级页面， tabbar的作用是支持在这些页面之间进行切换
-        let homeVC = UINavigationController(rootViewController: HomeViewController())
+        let homeVC = AIICustomNavigationController(rootViewController: HomeViewController())
         homeVC.tabBarItem.title = " 首页"
         
-        let categoryVC = UINavigationController(rootViewController: CategoryViewController())
+        let categoryVC = AIICustomNavigationController(rootViewController: CategoryViewController())
         categoryVC.tabBarItem.title = "分类"
         categoryVC.tabBarItem.image = UIImage(named: "category.png")
         
-        let foundVC = UINavigationController(rootViewController: FoundViewController())
+        let foundVC = AIICustomNavigationController(rootViewController: FoundViewController())
         foundVC.tabBarItem.title = "发现"
         
-        let cartVC = UINavigationController(rootViewController: CartViewController())
+        let cartVC = AIICustomNavigationController(rootViewController: CartViewController())
         cartVC.tabBarItem.title = "购物车"
         cartVC.tabBarItem.image = UIImage(named: "cart.png")
         
-        let mineVC = UINavigationController(rootViewController: MineViewController())
+        let mineVC = AIICustomNavigationController(rootViewController: MineViewController())
         mineVC.tabBarItem.title = "我的"
         mineVC.tabBarItem.image = UIImage(named: "mine.png")
         
