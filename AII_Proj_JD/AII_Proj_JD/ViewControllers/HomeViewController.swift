@@ -11,14 +11,11 @@ class HomeViewController: AIIBaseViewController {
 
     override func viewDidLoad() {
         
-        hideNavigationBar = true
-        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
         title = "首页"
-        
         view.backgroundColor = .green
         
         let label = UILabel(frame: CGRect.zero)
@@ -36,7 +33,7 @@ class HomeViewController: AIIBaseViewController {
         ])
         
         // 和 tabbar 设置原理相同
-        navigationController?.navigationBar.isTranslucent = false
+//        navigationController?.navigationBar.isTranslucent = false
     }
     
     @objc func tap() {

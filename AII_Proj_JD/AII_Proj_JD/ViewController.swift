@@ -11,14 +11,15 @@ class ViewController: AIIBaseViewController {
 
     override func viewDidLoad() {
         
-        hideNavigationBar = false
+//        hideNavigationBar = false
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         view.backgroundColor = .red
-        
         title = "二级页面"
+        
+        addNaviBar(.cyan)
     }
 
 

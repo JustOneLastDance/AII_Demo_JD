@@ -24,13 +24,4 @@ class AIICustomNavigationController: UINavigationController, UINavigationControl
         super.pushViewController(viewController, animated: animated)
     }
 
-    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        
-        var vc: AIIBaseViewController?
-        if viewControllers.count > 0 {
-            vc = viewControllers.last as? AIIBaseViewController
-            vc!.resetNavigationBar()
-        }
-    }
-
 }
