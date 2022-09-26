@@ -7,6 +7,11 @@
 
 import UIKit
 
+/**
+ UITabBarController
+ 底部的item 最多支持显示5个，一旦超过五个，则会显示前4个，最后一个会变成一个叫做“更多”的按钮
+ */
+
 class AIIMainTabBarControllerViewController: UITabBarController {
 
     override func viewDidLoad() {
@@ -18,25 +23,26 @@ class AIIMainTabBarControllerViewController: UITabBarController {
     
     
     func initTabBar() {
-        let homeVC = HomeViewController()
+        // 如下的vc都是一级页面， tabbar的作用是支持在这些页面之间进行切换
+        let homeVC = UINavigationController(rootViewController: HomeViewController())
         homeVC.tabBarItem.title = " 首页"
         
-        let categoryVC = CategoryViewController()
+        let categoryVC = UINavigationController(rootViewController: CategoryViewController())
         categoryVC.tabBarItem.title = "分类"
         categoryVC.tabBarItem.image = UIImage(named: "category.png")
         
-        let foundVC = FoundViewController()
+        let foundVC = UINavigationController(rootViewController: FoundViewController())
         foundVC.tabBarItem.title = "发现"
         
-        let cartVC = CategoryViewController()
+        let cartVC = UINavigationController(rootViewController: CartViewController())
         cartVC.tabBarItem.title = "购物车"
         cartVC.tabBarItem.image = UIImage(named: "cart.png")
         
-        let mineVC = MineViewController()
+        let mineVC = UINavigationController(rootViewController: MineViewController())
         mineVC.tabBarItem.title = "我的"
         mineVC.tabBarItem.image = UIImage(named: "mine.png")
         
-        viewControllers = [homeVC, cartVC, foundVC, cartVC, mineVC]
+        viewControllers = [homeVC, categoryVC, foundVC, cartVC, mineVC]
         setTabBarItemAttributes(backgroundColor: UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1))
     }
     

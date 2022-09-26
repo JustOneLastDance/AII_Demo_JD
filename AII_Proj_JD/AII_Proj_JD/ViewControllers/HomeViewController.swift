@@ -14,6 +14,8 @@ class HomeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        title = "首页"
+        
         view.backgroundColor = .green
         
         let label = UILabel(frame: CGRect.zero)
@@ -22,10 +24,20 @@ class HomeViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(label)
         
+        label.isUserInteractionEnabled = true
+        label.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap)))
+        
         NSLayoutConstraint.activate([
             label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
+        
+        // 和 tabbar 设置原理相同
+        navigationController?.navigationBar.isTranslucent = false
+    }
+    
+    @objc func tap() {
+        navigationController?.pushViewController(ViewController(), animated: true)
     }
 
 }
