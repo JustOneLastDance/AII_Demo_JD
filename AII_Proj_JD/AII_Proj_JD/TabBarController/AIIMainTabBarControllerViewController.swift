@@ -56,6 +56,9 @@ class AIIMainTabBarControllerViewController: UITabBarController {
         
         tabBar.tintColor = selectedColor
         tabBar.barTintColor = backgroundColor
+        // isTranslucent 属性 为 true 时会使得 vc 显示到 tabbar 上，反之则不会。
+        // 同时 vc 的frame 也会发生变化，为 false时，frame 底部会在 tabbar 的顶部
+        tabBar.isTranslucent = false
     }
 
     /*
