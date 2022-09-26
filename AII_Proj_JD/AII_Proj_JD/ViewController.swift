@@ -7,9 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: AIIBaseViewController {
 
     override func viewDidLoad() {
+        
+        hideNavigationBar = false
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         

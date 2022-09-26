@@ -10,6 +10,9 @@ import UIKit
 class HomeViewController: AIIBaseViewController {
 
     override func viewDidLoad() {
+        
+        hideNavigationBar = true
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

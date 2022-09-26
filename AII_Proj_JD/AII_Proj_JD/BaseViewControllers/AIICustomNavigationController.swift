@@ -7,11 +7,11 @@
 
 import UIKit
 
-class AIICustomNavigationController: UINavigationController {
+class AIICustomNavigationController: UINavigationController, UINavigationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -24,14 +24,13 @@ class AIICustomNavigationController: UINavigationController {
         super.pushViewController(viewController, animated: animated)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        
+        var vc: AIIBaseViewController?
+        if viewControllers.count > 0 {
+            vc = viewControllers.last as? AIIBaseViewController
+            vc!.resetNavigationBar()
+        }
     }
-    */
 
 }

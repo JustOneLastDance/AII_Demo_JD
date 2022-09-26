@@ -12,22 +12,18 @@
 import UIKit
 
 class AIIBaseViewController: UIViewController {
+    // 控制每个vc的navigationbar的显示，一级页面显示， 二级页面不显示
+    var hideNavigationBar = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // 控制每个vc的navigationbar的显示，一级页面显示， 二级页面不显示
+    open func resetNavigationBar() {
+        navigationController?.navigationBar.isHidden = hideNavigationBar
     }
-    */
 
 }
