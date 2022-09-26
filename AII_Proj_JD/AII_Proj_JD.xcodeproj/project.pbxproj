@@ -12,6 +12,12 @@
 		E48101D528E1EC96002EBFE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48101D428E1EC96002EBFE2 /* ViewController.swift */; };
 		E48101DA28E1EC97002EBFE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48101D928E1EC97002EBFE2 /* Assets.xcassets */; };
 		E48101DD28E1EC97002EBFE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48101DB28E1EC97002EBFE2 /* LaunchScreen.storyboard */; };
+		E4D152E528E1EFE3000E3E31 /* AIIMainTabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D152E428E1EFE3000E3E31 /* AIIMainTabBarControllerViewController.swift */; };
+		E4D152E828E1F039000E3E31 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D152E728E1F039000E3E31 /* HomeViewController.swift */; };
+		E4D152EA28E1F050000E3E31 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D152E928E1F050000E3E31 /* CategoryViewController.swift */; };
+		E4D152EC28E1F05C000E3E31 /* FoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D152EB28E1F05C000E3E31 /* FoundViewController.swift */; };
+		E4D152EE28E1F066000E3E31 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D152ED28E1F066000E3E31 /* CartViewController.swift */; };
+		E4D152F028E1F06F000E3E31 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D152EF28E1F06F000E3E31 /* MineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		E48101D928E1EC97002EBFE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E48101DC28E1EC97002EBFE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E48101DE28E1EC97002EBFE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4D152E428E1EFE3000E3E31 /* AIIMainTabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIIMainTabBarControllerViewController.swift; sourceTree = "<group>"; };
+		E4D152E728E1F039000E3E31 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E4D152E928E1F050000E3E31 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		E4D152EB28E1F05C000E3E31 /* FoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundViewController.swift; sourceTree = "<group>"; };
+		E4D152ED28E1F066000E3E31 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		E4D152EF28E1F06F000E3E31 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,8 @@
 		E48101CF28E1EC96002EBFE2 /* AII_Proj_JD */ = {
 			isa = PBXGroup;
 			children = (
+				E4D152E628E1F00B000E3E31 /* ViewControllers */,
+				E4D152E328E1EFA1000E3E31 /* TabBarController */,
 				E48101D028E1EC96002EBFE2 /* AppDelegate.swift */,
 				E48101D228E1EC96002EBFE2 /* SceneDelegate.swift */,
 				E48101D428E1EC96002EBFE2 /* ViewController.swift */,
@@ -62,6 +76,26 @@
 				E48101DE28E1EC97002EBFE2 /* Info.plist */,
 			);
 			path = AII_Proj_JD;
+			sourceTree = "<group>";
+		};
+		E4D152E328E1EFA1000E3E31 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				E4D152E428E1EFE3000E3E31 /* AIIMainTabBarControllerViewController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		E4D152E628E1F00B000E3E31 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E4D152E728E1F039000E3E31 /* HomeViewController.swift */,
+				E4D152E928E1F050000E3E31 /* CategoryViewController.swift */,
+				E4D152EB28E1F05C000E3E31 /* FoundViewController.swift */,
+				E4D152ED28E1F066000E3E31 /* CartViewController.swift */,
+				E4D152EF28E1F06F000E3E31 /* MineViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +168,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4D152E828E1F039000E3E31 /* HomeViewController.swift in Sources */,
 				E48101D528E1EC96002EBFE2 /* ViewController.swift in Sources */,
+				E4D152F028E1F06F000E3E31 /* MineViewController.swift in Sources */,
+				E4D152E528E1EFE3000E3E31 /* AIIMainTabBarControllerViewController.swift in Sources */,
 				E48101D128E1EC96002EBFE2 /* AppDelegate.swift in Sources */,
+				E4D152EE28E1F066000E3E31 /* CartViewController.swift in Sources */,
+				E4D152EA28E1F050000E3E31 /* CategoryViewController.swift in Sources */,
+				E4D152EC28E1F05C000E3E31 /* FoundViewController.swift in Sources */,
 				E48101D328E1EC96002EBFE2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
