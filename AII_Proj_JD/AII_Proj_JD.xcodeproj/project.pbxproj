@@ -12,6 +12,7 @@
 		E48101D528E1EC96002EBFE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48101D428E1EC96002EBFE2 /* ViewController.swift */; };
 		E48101DA28E1EC97002EBFE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48101D928E1EC97002EBFE2 /* Assets.xcassets */; };
 		E48101DD28E1EC97002EBFE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48101DB28E1EC97002EBFE2 /* LaunchScreen.storyboard */; };
+		E4B6077228E2F1DF008198DF /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B6077128E2F1DF008198DF /* UIColor+Extension.swift */; };
 		E4D152E528E1EFE3000E3E31 /* AIIMainTabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D152E428E1EFE3000E3E31 /* AIIMainTabBarControllerViewController.swift */; };
 		E4D152E828E1F039000E3E31 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D152E728E1F039000E3E31 /* HomeViewController.swift */; };
 		E4D152EA28E1F050000E3E31 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D152E928E1F050000E3E31 /* CategoryViewController.swift */; };
@@ -30,6 +31,7 @@
 		E48101D928E1EC97002EBFE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E48101DC28E1EC97002EBFE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E48101DE28E1EC97002EBFE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4B6077128E2F1DF008198DF /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		E4D152E428E1EFE3000E3E31 /* AIIMainTabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIIMainTabBarControllerViewController.swift; sourceTree = "<group>"; };
 		E4D152E728E1F039000E3E31 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E4D152E928E1F050000E3E31 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		E48101CF28E1EC96002EBFE2 /* AII_Proj_JD */ = {
 			isa = PBXGroup;
 			children = (
+				E4B6077028E2F1BD008198DF /* Extensions */,
 				E4D152F128E1FF6A000E3E31 /* BaseViewControllers */,
 				E4D152E628E1F00B000E3E31 /* ViewControllers */,
 				E4D152E328E1EFA1000E3E31 /* TabBarController */,
@@ -81,6 +84,14 @@
 				E48101DE28E1EC97002EBFE2 /* Info.plist */,
 			);
 			path = AII_Proj_JD;
+			sourceTree = "<group>";
+		};
+		E4B6077028E2F1BD008198DF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E4B6077128E2F1DF008198DF /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E4D152E328E1EFA1000E3E31 /* TabBarController */ = {
@@ -185,6 +196,7 @@
 				E4D152E828E1F039000E3E31 /* HomeViewController.swift in Sources */,
 				E4D152F528E1FFFE000E3E31 /* AIICustomNavigationController.swift in Sources */,
 				E48101D528E1EC96002EBFE2 /* ViewController.swift in Sources */,
+				E4B6077228E2F1DF008198DF /* UIColor+Extension.swift in Sources */,
 				E4D152F028E1F06F000E3E31 /* MineViewController.swift in Sources */,
 				E4D152E528E1EFE3000E3E31 /* AIIMainTabBarControllerViewController.swift in Sources */,
 				E48101D128E1EC96002EBFE2 /* AppDelegate.swift in Sources */,

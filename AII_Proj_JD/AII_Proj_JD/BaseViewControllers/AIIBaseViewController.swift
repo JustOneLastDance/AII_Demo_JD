@@ -38,7 +38,7 @@ class AIIBaseViewController: UIViewController {
         
 //        navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "Back", image: UIImage(), primaryAction: nil, menu: nil)
         
-        // 只要返回的箭头，不要文字 image 优先级比文字高
+        // 只要返回的箭头，不要文字: 设置image为UIImage(), 因为 image 的优先级比文字高
         navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "Back", image: UIImage(), primaryAction: nil, menu: nil)
         
         navigationItem.backBarButtonItem?.tintColor = .black
