@@ -12,7 +12,7 @@ import UIKit
  底部的item 最多支持显示5个，一旦超过五个，则会显示前4个，最后一个会变成一个叫做“更多”的按钮
  */
 
-class AIIMainTabBarControllerViewController: UITabBarController {
+class AIIMainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

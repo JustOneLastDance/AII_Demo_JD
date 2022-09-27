@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
         window?.backgroundColor = .white
-        window?.rootViewController = AIIMainTabBarControllerViewController()
+        window?.rootViewController = AIIAdvertiseViewController()
         window?.makeKeyAndVisible()
         
         return true
